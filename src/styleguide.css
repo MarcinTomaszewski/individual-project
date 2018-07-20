@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+body {
+    font-family: Roboto, 'Arial', sans-serif;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #a6a6a6;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 42px;     
+}
+p {
+    font-size: 16px;
+    color: #a6a6a6;
+    line-height: 42px;
+    font-weight: 500px;
+}
+strong {
+    font-weight: 700px;
+}
+a {
+    color: #56819f;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 17px;
+}
+ul, ol {
+    color: #a6a6a6;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 42px;
+}
+table {
+    color: #a6a6a6;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+}
+.btn-basic {
+    width: 93px;
+    height: 40px;
+    padding: 0;
+    border-radius: 3px;
+    background-color: #f58220;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 42px;
+    border: none;
+}
+.btn-basic-hover {
+    width: 93px;
+    height: 40px;
+    padding: 0;
+    border-radius: 3px;
+    background-color: #ffa200;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 42px;
+    border: none;
+}
+.btn-second {
+    width: 93px;
+    height: 40px;
+    padding: 0;
+    border-radius: 3px;
+    background-color: #979797;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 42px;
+    border: none;
+}
+.btn-second-hover {
+    width: 93px;
+    height: 40px;
+    padding: 0;
+    border-radius: 3px;
+    background-color: #bababa;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 42px;
+    border: none;
+}
+.btn-disabled {
+    width: 203px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #e3e3e3;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 42px;
+    border: none;
+    padding: 0;
+    text-align: center;
+}
+.icon-button {
+    margin-right: 10px;
+         
+}
+
+
+
