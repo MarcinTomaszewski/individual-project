@@ -5,6 +5,7 @@
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ }
 
 /* Sections ========================================================================== */
@@ -168,7 +169,7 @@ template { display: none; }
   .col-md-11 { -ms-flex: 0 0 91.66667%; flex: 0 0 91.66667%; max-width: 91.66667%; }
   .col-md-12 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; } }
 
-@media (min-width: 992px) { .col-lg-1 { -ms-flex: 0 0 8.33333%; flex: 0 0 8.33333%; max-width: 8.33333%; }
+@media (max-width: 992px) { .col-lg-1 { -ms-flex: 0 0 8.33333%; flex: 0 0 8.33333%; max-width: 8.33333%; }
   .col-lg-2 { -ms-flex: 0 0 16.66667%; flex: 0 0 16.66667%; max-width: 16.66667%; }
   .col-lg-3 { -ms-flex: 0 0 25%; flex: 0 0 25%; max-width: 25%; }
   .col-lg-4 { -ms-flex: 0 0 33.33333%; flex: 0 0 33.33333%; max-width: 33.33333%; }
@@ -181,7 +182,7 @@ template { display: none; }
   .col-lg-11 { -ms-flex: 0 0 91.66667%; flex: 0 0 91.66667%; max-width: 91.66667%; }
   .col-lg-12 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; } }
 
-@media (min-width: 1200px) { .col-xl-1 { -ms-flex: 0 0 8.33333%; flex: 0 0 8.33333%; max-width: 8.33333%; }
+@media (max-width: 1200px) { .col-xl-1 { -ms-flex: 0 0 8.33333%; flex: 0 0 8.33333%; max-width: 8.33333%; }
   .col-xl-2 { -ms-flex: 0 0 16.66667%; flex: 0 0 16.66667%; max-width: 16.66667%; }
   .col-xl-3 { -ms-flex: 0 0 25%; flex: 0 0 25%; max-width: 25%; }
   .col-xl-4 { -ms-flex: 0 0 33.33333%; flex: 0 0 33.33333%; max-width: 33.33333%; }
@@ -196,29 +197,35 @@ template { display: none; }
 
 body { font-family: 'Roboto', 'Arial', sans-serif; }
 
-.main-wrapper { max-width: 1280px; width: 100%; margin: 0 auto; }
+.main-wrapper { max-width: 1280px; margin: 0 auto; position: relative; }
 
-.sidebar { max-width: 188px; width: 100%; height: 1724px; background-color: #191919; float: left; }
+.main-container { max-width: 1092px; height: auto; background-color: #f5f5f2; margin-left: 188px; padding-top: 60px; padding-bottom: 1.5%; padding-left: 1.5%; padding-right: 1.5%; }
 
-.main-container { max-width: 1092px; width: 100%; height: 1724px; background-color: #f5f5f2; float: left; }
+/* SECTION SIDEBAR */
+.logo { margin: 18px 0 20px 20px; overflow: hidden; }
 
-.head { height: 60px; width: 100%; background-color: #ffffff; border-bottom: 1px solid #e3e3e3; }
-
-.wrapper { width: 1056px; height: 798px; margin: 0 auto; margin-top: 18px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); background-color: #ffffff; }
-
-.logo { margin: 18px 0 20px 20px; }
-
-.hamburger { margin: 23px 18px 0 0; float: right; }
+.hamburger { margin: 23px 18px 0 0; float: right; display: none; }
 
 .list { list-style-type: none; margin: 0; padding: 0; border-bottom: 1px solid #333333; padding-bottom: 41px; }
 
 .list__element:hover { border-left: 4px solid #f58220; background-color: #282828; }
 
+.list__element--active { border-left: 4px solid #f58220; background-color: #282828; }
+
+.list__link--active { text-decoration: none; color: #ffffff; font-size: 14px; font-weight: 300; line-height: 42px; }
+
+.list__icon--active { width: 0.8em; margin-left: 16px; margin-right: 13px; line-height: 42px; }
+
 .list__element:hover .list__icon { margin-left: 16px; width: 0.8em; }
+
+.list__element:hover .list__link { color: #ffffff; }
 
 .list__link { text-decoration: none; color: #818181; font-size: 14px; font-weight: 300; line-height: 42px; }
 
 .list__icon { width: 0.8em; margin-left: 20px; margin-right: 13px; line-height: 42px; }
+
+/* SECTION SIDEBAR - TEAM */
+.sidebar { width: 188px; height: 100%; background-color: #191919; float: left; position: fixed; }
 
 .sidebar__title { display: inline-block; font-family: 'Roboto'; color: #808080; font-size: 14px; font-weight: 500; line-height: 42px; text-transform: uppercase; letter-spacing: -0.28px; margin-top: 28px; margin-left: 20px; margin-bottom: 0; }
 
@@ -228,4 +235,110 @@ body { font-family: 'Roboto', 'Arial', sans-serif; }
 
 .sidebar__image-online { position: absolute; left: 50px; }
 
-.sidebar__name { color: #56819f; font-family: 'Roboto'; font-size: 14px; font-weight: 300; line-height: 42px; float: right; margin-right: 54px; padding: 0; }
+.sidebar__name { color: #56819f; font-family: 'Roboto'; font-size: 14px; font-weight: 300; line-height: 42px; float: right; margin-right: 47px; padding: 0; text-decoration: none; }
+
+.sidebar__name:hover { color: #cc8743; }
+
+/* SECTION TOPBAR */
+.topbar { min-width: 1092px; height: 60px; background-color: #ffffff; border-bottom: 1px solid #e3e3e3; border-right: 1px solid #e3e3e3; position: fixed; top: 0; margin-left: 188px; overflow: hidden; }
+
+.topbar__list { list-style-type: none; float: right; margin: 0; }
+
+.topbar__element { float: left; border-left: 1px solid #e3e3e3; line-height: 60px; font-family: 'Roboto'; font-size: 20px; font-weight: 500; line-height: 60px; color: #9c9c9c; }
+
+.topbar__element:hover { background-color: #f5f5f2; cursor: pointer; }
+
+.topbar__link { text-decoration: none; }
+
+.topbar__icon { margin: 0 18px; line-height: 60px; }
+
+.topbar__text { margin-right: 18px; color: #56819f; font-family: Roboto; font-size: 13px; font-weight: 300; }
+
+.topbar__text:hover { color: #cc8743; }
+
+/* SECTION WRAPPER */
+.wrapper { width: 97%; height: auto; margin: 0 auto; margin-top: 1.5%; padding-bottom: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); background-color: #ffffff; }
+
+.wrapper__title { color: #a6a6a6; font-family: 'Roboto'; font-size: 16px; font-weight: 500; line-height: 42px; text-transform: uppercase; border-bottom: 1px solid #e3e3e3; padding-left: 17px; margin-bottom: 0; margin-top: 0; }
+
+/* SECTION CALENDAR */
+.calendar { border-bottom: 1px solid #e3e3e3; padding-top: 35px; padding-bottom: 35px; }
+
+.calendar__wrapper { display: -ms-flexbox; display: flex; max-width: 422px; width: 100%; margin: 0 auto; }
+
+.calendar__data { border-radius: 3px; border: 1px solid #e3e3e3; margin-right: 13px; }
+
+.calendar__data:hover { border: 1px solid #b1b1b1; }
+
+.calendar__item { display: inline; padding-top: 7px; padding-bottom: 7px; }
+
+.calendar__item:nth-child(2) { border-left: 1px solid #e3e3e3; }
+
+.calendar__day { color: #333333; font-family: Roboto; font-size: 14px; font-weight: 300; line-height: 42px; padding: 17px 64px 17px 17px; }
+
+.calendar__icon { margin-right: 15px; }
+
+.calendar__button { display: block; border: none; border-radius: 3px; background-color: #f58220; padding: 0; }
+
+.calendar__button:hover { background-color: #ffa200; cursor: pointer; }
+
+.calendar__button-icon { padding-left: 13px; padding-right: 13px; }
+
+/* SECTION DIAGRAMS */
+.diagrams { max-width: 687px; margin: 0 auto; }
+
+.diagrams__wraper { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: justify; justify-content: space-between; margin-top: 41px; }
+
+.diagrams__element { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; width: 310px; border-bottom: 1px solid #e3e3e3; margin-top: 12px; }
+
+.diagrams__text { color: #a6a6a6; font-family: Roboto; font-size: 16px; font-weight: 700; line-height: 42px; }
+
+.diagrams__number { color: #333333; font-family: Roboto; font-size: 16px; font-weight: 300; line-height: 42px; }
+
+.diagrams__title { color: #a6a6a6; font-family: Roboto; font-size: 16px; font-weight: 700; line-height: 42px; margin-top: 76px; }
+
+.diagrams__graph { max-width: 655px; width: 100%; margin: 0 auto; padding-top: 40px; padding-bottom: 55px; padding-left: 1.5%; padding-right: 1.5%; }
+
+/* SECTION LINK */
+.addres { max-width: 687px; margin: 0 auto; }
+
+.addres__button { display: block; margin: 23px auto; border: none; border-radius: 3px; background-color: #f58220; color: #ffffff; font-family: 'Roboto'; font-size: 18px; font-weight: 300; padding: 12px 25px 12px 21px; }
+
+.addres__button:hover { background-color: #ffa200; cursor: pointer; }
+
+.addres__list { list-style-type: none; display: -ms-flexbox; display: flex; margin: 0; padding: 0; border-top: 1px solid #e3e3e3; }
+
+.addres__list:hover { background-color: rgba(177, 191, 191, 0.1); }
+
+.addres__element { max-width: 315px; width: 100%; color: #a6a6a6; font-family: Roboto; font-size: 16px; font-weight: 700; line-height: 42px; padding-left: 10px; }
+
+.addres__element-adress { display: block; width: 290px; color: #56819f; font-family: Roboto; font-size: 16px; font-weight: 300; line-height: 42px; }
+
+.addres__link { text-decoration: none; color: #56819f; font-family: Roboto; font-size: 16px; font-weight: 300; }
+
+.addres__link:hover { color: #cc8743; }
+
+.addres__list:nth-child(11) { border-bottom: 1px solid #e3e3e3; }
+
+.addres__link-icon { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-line-pack: center; align-content: center; height: 42px; padding-right: 23px; }
+
+@media (max-width: 1200px) { .sidebar { position: inherit; }
+  .menu, .sidebar__title, .sidebar__person { display: none; }
+  .hamburger { display: inherit; }
+  .show { display: inherit; }
+  .topbar { display: none; }
+  .main-wrapper { width: 100%; }
+  .main-container { padding-top: 5px; margin-left: 0; padding-left: 1.5%; padding-right: 1.5%; margin: 0 auto; } }
+
+@media (max-width: 768px) { .diagrams__wraper { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
+  .addres { max-width: 420px; width: 100%; }
+  .addres__element { max-width: 140px; width: 100%; }
+  .addres__element-adress { max-width: 200px; width: 100%; } }
+
+@media (max-width: 450px) { .addres__list { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: left; align-items: left; }
+  .addres__element { line-height: 30px; }
+  .addres__element-adress { padding-left: 10px; line-height: 30px; }
+  .addres__link-icon { margin-bottom: 5px; max-width: 60px; height: 15px; }
+  .calendar__wrapper { max-width: 300px; width: 100%; }
+  .calendar__day { padding-right: 10px; }
+  .calendar__data { margin: 0 auto; } }
