@@ -206,23 +206,23 @@ body { font-family: 'Roboto', 'Arial', sans-serif; }
 
 .hamburger { margin: 23px 18px 0 0; float: right; display: none; }
 
-.list { list-style-type: none; margin: 0; padding: 0; border-bottom: 1px solid #333333; padding-bottom: 41px; }
+.menu__list { list-style-type: none; margin: 0; padding: 0; border-bottom: 1px solid #333333; padding-bottom: 41px; }
 
-.list__element:hover { border-left: 4px solid #f58220; background-color: #282828; }
+.menu__element:hover { border-left: 4px solid #f58220; background-color: #282828; }
 
-.list__element--active { border-left: 4px solid #f58220; background-color: #282828; }
+.menu__element--active { border-left: 4px solid #f58220; background-color: #282828; }
 
-.list__link--active { text-decoration: none; color: #ffffff; font-size: 14px; font-weight: 300; line-height: 42px; }
+.menu__link--active { text-decoration: none; color: #ffffff; font-size: 14px; font-weight: 300; line-height: 42px; }
 
-.list__icon--active { width: 0.8em; margin-left: 16px; margin-right: 13px; line-height: 42px; }
+.menu__icon--active { width: 0.8em; margin-left: 16px; margin-right: 13px; line-height: 42px; }
 
-.list__element:hover .list__icon { margin-left: 16px; width: 0.8em; }
+.menu__element:hover .list__icon { margin-left: 16px; width: 0.8em; }
 
-.list__element:hover .list__link { color: #ffffff; }
+.menu__element:hover .list__link { color: #ffffff; }
 
-.list__link { text-decoration: none; color: #818181; font-size: 14px; font-weight: 300; line-height: 42px; }
+.menu__link { text-decoration: none; color: #818181; font-size: 14px; font-weight: 300; line-height: 42px; }
 
-.list__icon { width: 0.8em; margin-left: 20px; margin-right: 13px; line-height: 42px; }
+.menu__icon { width: 0.8em; margin-left: 20px; margin-right: 13px; line-height: 42px; }
 
 /* SECTION SIDEBAR - TEAM */
 .sidebar { width: 188px; height: 100%; background-color: #191919; float: left; position: fixed; }
