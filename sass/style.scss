@@ -262,7 +262,7 @@
     max-width: 687px;
     margin: 0 auto;
 }
-.diagrams__wraper {    
+.diagrams__wrapper {    
     display: flex;    
     flex-wrap: wrap;
     justify-content: space-between;
@@ -408,7 +408,7 @@
 
 }
 @media(max-width: 768px) {
-    .diagrams__wraper {
+    .diagrams__wrapper {
         flex-direction: column;
         align-items: center;
     }

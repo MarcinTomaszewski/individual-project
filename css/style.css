@@ -287,7 +287,7 @@ template { display: none; }
 /* SECTION DIAGRAMS */
 .diagrams { max-width: 687px; margin: 0 auto; }
 
-.diagrams__wraper { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: justify; justify-content: space-between; margin-top: 41px; }
+.diagrams__wrapper { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: justify; justify-content: space-between; margin-top: 41px; }
 
 .diagrams__element { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; width: 310px; border-bottom: 1px solid #e3e3e3; margin-top: 12px; }
 
@@ -330,7 +330,7 @@ template { display: none; }
   .main-wrapper { width: 100%; }
   .main-container { padding-top: 5px; margin-left: 0; padding-left: 1.5%; padding-right: 1.5%; margin: 0 auto; } }
 
-@media (max-width: 768px) { .diagrams__wraper { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
+@media (max-width: 768px) { .diagrams__wrapper { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
   .addres { max-width: 420px; width: 100%; }
   .addres__element { max-width: 140px; width: 100%; }
   .addres__element-link { max-width: 200px; width: 100%; } }
