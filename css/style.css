@@ -2,6 +2,8 @@
 /* Colors */
 /* Font size */
 /* Fonts */
+/* Background color */
+/* Line height */
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
@@ -195,8 +197,6 @@ template { display: none; }
   .col-xl-11 { -ms-flex: 0 0 91.66667%; flex: 0 0 91.66667%; max-width: 91.66667%; }
   .col-xl-12 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; } }
 
-body { font-family: 'Roboto', 'Arial', sans-serif; }
-
 .main-wrapper { max-width: 1280px; margin: 0 auto; position: relative; }
 
 .main-container { max-width: 1092px; height: auto; background-color: #f5f5f2; margin-left: 188px; padding-top: 60px; padding-bottom: 1.5%; padding-left: 1.5%; padding-right: 1.5%; }
@@ -212,22 +212,22 @@ body { font-family: 'Roboto', 'Arial', sans-serif; }
 
 .menu__element--active { border-left: 4px solid #f58220; background-color: #282828; }
 
-.menu__link--active { text-decoration: none; color: #ffffff; font-size: 14px; font-weight: 300; line-height: 42px; }
+.menu__link { text-decoration: none; color: #818181; font-family: "Roboto", Arial, sans-serif; font-size: 14px; font-weight: 300; line-height: 42px; }
+
+.menu__link--active { text-decoration: none; color: #ffffff; font-family: "Roboto", Arial, sans-serif; font-size: 14px; font-weight: 300; line-height: 42px; }
+
+.menu__element:hover .menu__link { color: #ffffff; }
 
 .menu__icon--active { width: 0.8em; margin-left: 16px; margin-right: 13px; line-height: 42px; }
 
-.menu__element:hover .list__icon { margin-left: 16px; width: 0.8em; }
-
-.menu__element:hover .list__link { color: #ffffff; }
-
-.menu__link { text-decoration: none; color: #818181; font-size: 14px; font-weight: 300; line-height: 42px; }
+.menu__element:hover .menu__icon { margin-left: 16px; width: 0.8em; }
 
 .menu__icon { width: 0.8em; margin-left: 20px; margin-right: 13px; line-height: 42px; }
 
 /* SECTION SIDEBAR - TEAM */
 .sidebar { width: 188px; height: 100%; background-color: #191919; float: left; position: fixed; }
 
-.sidebar__title { display: inline-block; font-family: 'Roboto'; color: #808080; font-size: 14px; font-weight: 500; line-height: 42px; text-transform: uppercase; letter-spacing: -0.28px; margin-top: 28px; margin-left: 20px; margin-bottom: 0; }
+.sidebar__title { display: inline-block; font-family: "Roboto", Arial, sans-serif; color: #818181; font-size: 14px; font-weight: 500; line-height: 42px; text-transform: uppercase; letter-spacing: -0.28px; margin-top: 28px; margin-left: 20px; margin-bottom: 0; }
 
 .sidebar__person { position: relative; height: 43px; margin: 0; padding: 0; }
 
@@ -235,7 +235,7 @@ body { font-family: 'Roboto', 'Arial', sans-serif; }
 
 .sidebar__image-online { position: absolute; left: 50px; }
 
-.sidebar__name { color: #56819f; font-family: 'Roboto'; font-size: 14px; font-weight: 300; line-height: 42px; float: right; margin-right: 47px; padding: 0; text-decoration: none; }
+.sidebar__name { color: #56819f; font-family: "Roboto", Arial, sans-serif; font-size: 14px; font-weight: 300; line-height: 42px; float: right; margin-right: 47px; padding: 0; text-decoration: none; }
 
 .sidebar__name:hover { color: #cc8743; }
 
@@ -244,7 +244,7 @@ body { font-family: 'Roboto', 'Arial', sans-serif; }
 
 .topbar__list { list-style-type: none; float: right; margin: 0; }
 
-.topbar__element { float: left; border-left: 1px solid #e3e3e3; line-height: 60px; font-family: 'Roboto'; font-size: 20px; font-weight: 500; line-height: 60px; color: #9c9c9c; }
+.topbar__element { float: left; border-left: 1px solid #e3e3e3; font-family: "Roboto", Arial, sans-serif; font-size: 20px; font-weight: 500; line-height: 60px; color: #9c9c9c; }
 
 .topbar__element:hover { background-color: #f5f5f2; cursor: pointer; }
 
@@ -252,14 +252,14 @@ body { font-family: 'Roboto', 'Arial', sans-serif; }
 
 .topbar__icon { margin: 0 18px; line-height: 60px; }
 
-.topbar__text { margin-right: 18px; color: #56819f; font-family: Roboto; font-size: 13px; font-weight: 300; }
+.topbar__text { margin-right: 18px; color: #56819f; font-family: "Roboto", Arial, sans-serif; font-size: 13px; font-weight: 300; }
 
 .topbar__text:hover { color: #cc8743; }
 
 /* SECTION WRAPPER */
 .wrapper { width: 97%; height: auto; margin: 0 auto; margin-top: 1.5%; padding-bottom: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); background-color: #ffffff; }
 
-.wrapper__title { color: #a6a6a6; font-family: 'Roboto'; font-size: 16px; font-weight: 500; line-height: 42px; text-transform: uppercase; border-bottom: 1px solid #e3e3e3; padding-left: 17px; margin-bottom: 0; margin-top: 0; }
+.wrapper__title { color: #a6a6a6; font-family: "Roboto", Arial, sans-serif; font-size: 16px; font-weight: 500; line-height: 42px; linkext-transform: uppercase; border-bottom: 1px solid #e3e3e3; padding-left: 17px; margin-bottom: 0; margin-top: 0; }
 
 /* SECTION CALENDAR */
 .calendar { border-bottom: 1px solid #e3e3e3; padding-top: 35px; padding-bottom: 35px; }
@@ -274,7 +274,7 @@ body { font-family: 'Roboto', 'Arial', sans-serif; }
 
 .calendar__item:nth-child(2) { border-left: 1px solid #e3e3e3; }
 
-.calendar__day { color: #333333; font-family: Roboto; font-size: 14px; font-weight: 300; line-height: 42px; padding: 17px 64px 17px 17px; }
+.calendar__day { color: #333333; font-family: "Roboto", Arial, sans-serif; font-size: 14px; font-weight: 300; line-height: 42px; padding: 17px 64px 17px 17px; }
 
 .calendar__icon { margin-right: 15px; }
 
@@ -291,18 +291,18 @@ body { font-family: 'Roboto', 'Arial', sans-serif; }
 
 .diagrams__element { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; width: 310px; border-bottom: 1px solid #e3e3e3; margin-top: 12px; }
 
-.diagrams__text { color: #a6a6a6; font-family: Roboto; font-size: 16px; font-weight: 700; line-height: 42px; }
+.diagrams__text { color: #a6a6a6; font-family: "Roboto", Arial, sans-serif; font-size: 16px; font-weight: 700; line-height: 42px; }
 
-.diagrams__number { color: #333333; font-family: Roboto; font-size: 16px; font-weight: 300; line-height: 42px; }
+.diagrams__number { color: #333333; font-family: "Roboto", Arial, sans-serif; font-size: 16px; font-weight: 300; line-height: 42px; }
 
-.diagrams__title { color: #a6a6a6; font-family: Roboto; font-size: 16px; font-weight: 700; line-height: 42px; margin-top: 76px; }
+.diagrams__title { color: #a6a6a6; font-family: "Roboto", Arial, sans-serif; font-size: 16px; font-weight: 700; line-height: 42px; margin-top: 76px; }
 
 .diagrams__graph { max-width: 655px; width: 100%; margin: 0 auto; padding-top: 40px; padding-bottom: 55px; padding-left: 1.5%; padding-right: 1.5%; }
 
 /* SECTION LINK */
 .addres { max-width: 687px; margin: 0 auto; }
 
-.addres__button { display: block; margin: 23px auto; border: none; border-radius: 3px; background-color: #f58220; color: #ffffff; font-family: 'Roboto'; font-size: 18px; font-weight: 300; padding: 12px 25px 12px 21px; }
+.addres__button { display: block; margin: 23px auto; border: none; border-radius: 3px; background-color: #f58220; color: #ffffff; font-family: "Roboto", Arial, sans-serif; font-size: 18px; font-weight: 300; padding: 12px 25px 12px 21px; }
 
 .addres__button:hover { background-color: #ffa200; cursor: pointer; }
 
@@ -310,11 +310,11 @@ body { font-family: 'Roboto', 'Arial', sans-serif; }
 
 .addres__list:hover { background-color: rgba(177, 191, 191, 0.1); }
 
-.addres__element { max-width: 315px; width: 100%; color: #a6a6a6; font-family: Roboto; font-size: 16px; font-weight: 700; line-height: 42px; padding-left: 10px; }
+.addres__element { max-width: 315px; width: 100%; color: #a6a6a6; font-family: "Roboto", Arial, sans-serif; font-size: 16px; font-weight: 700; line-height: 42px; padding-left: 10px; }
 
-.addres__element-adress { display: block; width: 290px; color: #56819f; font-family: Roboto; font-size: 16px; font-weight: 300; line-height: 42px; }
+.addres__element-link { display: block; width: 290px; color: #56819f; font-family: "Roboto", Arial, sans-serif; font-size: 16px; font-weight: 300; line-height: 42px; }
 
-.addres__link { text-decoration: none; color: #56819f; font-family: Roboto; font-size: 16px; font-weight: 300; }
+.addres__link { text-decoration: none; color: #56819f; font-family: "Roboto", Arial, sans-serif; font-size: 16px; font-weight: 300; }
 
 .addres__link:hover { color: #cc8743; }
 
@@ -333,11 +333,11 @@ body { font-family: 'Roboto', 'Arial', sans-serif; }
 @media (max-width: 768px) { .diagrams__wraper { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
   .addres { max-width: 420px; width: 100%; }
   .addres__element { max-width: 140px; width: 100%; }
-  .addres__element-adress { max-width: 200px; width: 100%; } }
+  .addres__element-link { max-width: 200px; width: 100%; } }
 
 @media (max-width: 450px) { .addres__list { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: left; align-items: left; }
   .addres__element { line-height: 30px; }
-  .addres__element-adress { padding-left: 10px; line-height: 30px; }
+  .addres__element-link { padding-left: 10px; line-height: 30px; }
   .addres__link-icon { margin-bottom: 5px; max-width: 60px; height: 15px; }
   .calendar__wrapper { max-width: 300px; width: 100%; }
   .calendar__day { padding-right: 10px; }

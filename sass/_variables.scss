@@ -1,10 +1,38 @@
 /* Colors */
-$paragraph-color: #000000;
-$brand-main-color: #000000;
+$sidebar-menu-title-link-color: #818181;
+$menu-element-link-hover-active-color: #ffffff;
+$topbar-element-color: #9c9c9c;
 
 /* Font size */
-$paragraph-font-size: 16px;
+$primary-font-size: 16px;
+$menu-link-font-size: $primary-font-size - 2px;
+$sidebar-title-font-size: $primary-font-size - 2px;
+$sidebar-name-font-size: $primary-font-size - 2px;
+$topbar-element-font-size: $primary-font-size + 4px;
+$topbar-text-font-size: $primary-font-size - 3px;
+$wrapper-title-font-size: $primary-font-size;
+$calendar-day-font-size: $primary-font-size - 2px;
+$diagrams-text-font-size: $primary-font-size;
+$diagrams-number-font-size: $primary-font-size;
+$diagrams-title-font-size: $primary-font-size;
+$addres-button-font-size: $primary-font-size + 2px;
+$addres-element-font-size: $primary-font-size;
+$addres-element-adress-font-size: $primary-font-size;
+$addres-link-font-size: $primary-font-size;
 
 /* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
+$primary-font: 'Roboto', Arial,  sans-serif;
+
+/* Background color */
+$main-container-background-color: #f5f5f2;
+$sidebar-background-color: #191919;
+$menu-element-background-hover-active-color: #282828;
+$wrapper-background-color: #ffffff;
+$topbar-background-color: #ffffff;
+$topbar-element-background-hover-color: #f5f5f2;
+
+/* Line height */
+$primary-line-height: 42px;
+$topbar-element-line-height: $primary-line-height + 18px;
+$addres-element-media-line-height: $primary-line-height - 12px;
+$addres-element-link-media-line-height: $primary-line-height - 12px;

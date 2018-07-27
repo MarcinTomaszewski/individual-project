@@ -4,9 +4,6 @@
 @import "layout";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 
-body {
-    font-family: 'Roboto', 'Arial', sans-serif;
-}
 .main-wrapper {
     max-width: 1280px;
     margin: 0 auto;   
@@ -15,7 +12,7 @@ body {
 .main-container {
     max-width: 1092px;
     height: auto;
-    background-color: #f5f5f2;
+    background-color: $main-container-background-color;
     margin-left: 188px;
     padding-top: 60px;
     padding-bottom: 1.5%;
@@ -42,62 +39,64 @@ body {
 }
 .menu__element:hover {
     border-left: 4px solid #f58220;
-    background-color: #282828;
+    background-color: $menu-element-background-hover-active-color;
 }
 .menu__element--active {
     border-left: 4px solid #f58220;
-    background-color: #282828;
+    background-color: $menu-element-background-hover-active-color;
+}
+.menu__link {
+    text-decoration: none;
+    color: $sidebar-menu-title-link-color;
+    font-family: $primary-font;
+    font-size: $menu-link-font-size;
+    font-weight: 300;
+    line-height: $primary-line-height;
 }
 .menu__link--active {
     text-decoration: none;
-    color: #ffffff;
-    font-size: 14px;
+    color: $menu-element-link-hover-active-color;
+    font-family: $primary-font;
+    font-size: $menu-link-font-size;
     font-weight: 300;
-    line-height: 42px;
+    line-height: $primary-line-height;
+}
+.menu__element:hover .menu__link {
+    color: $menu-element-link-hover-active-color;
 }
 .menu__icon--active {
     width: 0.8em;
     margin-left: 16px;
     margin-right: 13px;
-    line-height: 42px;
+    line-height: $primary-line-height;
 }
-.menu__element:hover .list__icon {
+.menu__element:hover .menu__icon {
     margin-left: 16px;
     width: 0.8em;
-}
-.menu__element:hover .list__link {
-    color: #ffffff;
-}
-.menu__link {
-    text-decoration: none;
-    color: #818181;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 42px;
 }
 .menu__icon {
     width: 0.8em;
     margin-left: 20px;
     margin-right: 13px;
-    line-height: 42px;
+    line-height: $primary-line-height;
 }
 
 /* SECTION SIDEBAR - TEAM */
 .sidebar {
     width: 188px;    
     height: 100%;
-    background-color: #191919;
+    background-color: $sidebar-background-color;
     float: left;
     position: fixed;
     
 }
 .sidebar__title { 
     display: inline-block;
-    font-family: 'Roboto';  
-    color: #808080;    
-    font-size: 14px;
+    font-family: $primary-font;  
+    color: $sidebar-menu-title-link-color;    
+    font-size: $sidebar-title-font-size;
     font-weight: 500;
-    line-height: 42px;
+    line-height: $primary-line-height;
     text-transform: uppercase;
     letter-spacing: -0.28px;
     margin-top: 28px; 
@@ -119,10 +118,10 @@ body {
 }
 .sidebar__name {   
     color: #56819f;
-    font-family: 'Roboto';
-    font-size: 14px;
+    font-family: $primary-font;
+    font-size: $sidebar-name-font-size;
     font-weight: 300;
-    line-height: 42px;
+    line-height: $primary-line-height;
     float: right;    
     margin-right: 47px;
     padding: 0;
@@ -136,7 +135,7 @@ body {
 .topbar {
     min-width: 1092px; 
     height: 60px;
-    background-color: #ffffff;
+    background-color: $topbar-background-color;
     border-bottom: 1px solid #e3e3e3;
     border-right: 1px solid #e3e3e3;
     position: fixed;
@@ -152,14 +151,13 @@ body {
 .topbar__element {
     float: left;    
     border-left: 1px solid #e3e3e3;
-    line-height: 60px;
-    font-family: 'Roboto';
-    font-size: 20px;
+    font-family: $primary-font;
+    font-size: $topbar-element-font-size;
     font-weight: 500;
-    line-height: 60px;
-    color: #9c9c9c;
+    line-height: $topbar-element-line-height;
+    color: $topbar-element-color;
     &:hover {
-        background-color: #f5f5f2;
+        background-color: $topbar-element-background-hover-color;
         cursor: pointer;
     }
 }
@@ -168,13 +166,13 @@ body {
 }
 .topbar__icon {
     margin: 0 18px;
-    line-height: 60px;
+    line-height: $topbar-element-line-height;
 }
 .topbar__text {
     margin-right: 18px;
     color: #56819f;
-    font-family: Roboto;
-    font-size: 13px;
+    font-family: $primary-font;
+    font-size: $topbar-text-font-size;
     font-weight: 300;
      &:hover {
         color: #cc8743;
@@ -190,15 +188,14 @@ body {
     margin-top: 1.5%;
     padding-bottom: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    background-color: $wrapper-background-color;
 }
 .wrapper__title {
     color: #a6a6a6;
-    font-family: 'Roboto';
-    font-size: 16px;
+    font-family: $primary-font;
+    font-size: $wrapper-title-font-size;
     font-weight: 500;
-    line-height: 42px;
-    text-transform: uppercase;
+    line-height: $primary-line-height;linkext-transform: uppercase;
     border-bottom: 1px solid #e3e3e3;
     padding-left: 17px;
     margin-bottom: 0;
@@ -235,10 +232,10 @@ body {
 }
 .calendar__day {
     color: #333333;
-    font-family: Roboto;
-    font-size: 14px;
+    font-family: $primary-font;
+    font-size: $calendar-day-font-size;
     font-weight: 300;
-    line-height: 42px;
+    line-height: $primary-line-height;
     padding: 17px 64px 17px 17px;      
 }
 .calendar__icon {
@@ -281,24 +278,24 @@ body {
 }
 .diagrams__text {
     color: #a6a6a6;
-    font-family: Roboto;
-    font-size: 16px;
+    font-family: $primary-font;
+    font-size: $diagrams-text-font-size;
     font-weight: 700;
-    line-height: 42px;
+    line-height: $primary-line-height;
 }
 .diagrams__number {
     color: #333333;
-    font-family: Roboto;
-    font-size: 16px;
+    font-family: $primary-font;
+    font-size: $diagrams-number-font-size;
     font-weight: 300;
-    line-height: 42px;
+    line-height: $primary-line-height;
 }
 .diagrams__title {
     color: #a6a6a6;
-    font-family: Roboto;
-    font-size: 16px;
+    font-family: $primary-font;
+    font-size: $diagrams-title-font-size;
     font-weight: 700;
-    line-height: 42px; 
+    line-height: $primary-line-height; 
     margin-top: 76px;   
 }
 .diagrams__graph { 
@@ -323,8 +320,8 @@ body {
     border-radius: 3px;
     background-color: #f58220;
     color: #ffffff;
-    font-family: 'Roboto';
-    font-size: 18px;
+    font-family: $primary-font;
+    font-size: $addres-button-font-size;
     font-weight: 300;
     padding: 12px 25px 12px 21px;
     &:hover {
@@ -346,26 +343,26 @@ body {
     max-width: 315px;
     width: 100%;
     color: #a6a6a6;
-    font-family: Roboto;
-    font-size: 16px;
+    font-family: $primary-font;
+    font-size: $addres-element-font-size;
     font-weight: 700;
-    line-height: 42px;   
+    line-height: $primary-line-height;   
     padding-left: 10px;
 }
-.addres__element-adress {
+.addres__element-link {
     display: block;
     width: 290px;
     color: #56819f;
-    font-family: Roboto;
-    font-size: 16px;
+    font-family: $primary-font;
+    font-size: $addres-element-adress-font-size;
     font-weight: 300;
     line-height: 42px;
 }
 .addres__link {
     text-decoration: none;
     color: #56819f;
-    font-family: Roboto;
-    font-size: 16px;
+    font-family: $primary-font;
+    font-size: $addres-link-font-size;
     font-weight: 300;
     &:hover {
         color: #cc8743; 
@@ -426,7 +423,7 @@ body {
         max-width: 140px;
         width: 100%;
     }
-    .addres__element-adress {
+    .addres__element-link {
         max-width: 200px;
         width: 100%;
     }
@@ -438,11 +435,11 @@ body {
         align-items: left;
     }
     .addres__element {
-        line-height: 30px;
+        line-height: $addres-element-media-line-height;
     }
-    .addres__element-adress {
+    .addres__element-link {
         padding-left: 10px;
-        line-height: 30px;        
+        line-height: $addres-element-link-media-line-height;        
     }
     .addres__link-icon {
         margin-bottom: 5px;
