@@ -455,8 +455,10 @@ template { display: none; }
   .show { display: inherit; }
   .topbar { display: none; }
   .topbar--hidden { display: initial; }
+  .topbar__list { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
   .topbar__list { background-color: #ffffff; width: 100%; float: left; padding: 0; margin: 0; border: 1px solid #e3e3e3; border-right: none; border-left: none; }
-  .topbar__element:last-child { border-right: 1px solid #e3e3e3; } }
+  .topbar__element:last-child { border-right: 1px solid #e3e3e3; }
+  .topbar__element { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; height: 40px; border-bottom: 1px solid #e3e3e3; } }
 
 @media (max-width: 768px) { .diagrams__wrapper { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
   .address { max-width: 420px; width: 100%; }

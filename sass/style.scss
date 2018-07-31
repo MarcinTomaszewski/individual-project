@@ -41,10 +41,14 @@
         display: inherit;
     }
     .topbar {
-       display: none;              
+       display: none;        
     }
     .topbar--hidden {
         display: initial;        
+    }
+    .topbar__list {
+        display: flex;
+        flex-direction: column;        
     }
     .topbar__list {
         background-color: #ffffff;
@@ -59,7 +63,13 @@
     .topbar__element:last-child {
         border-right: 1px solid #e3e3e3;
     }
-
+    .topbar__element {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        border-bottom: 1px solid #e3e3e3;
+    }
+    
 }
 @media(max-width: 768px) {
     .diagrams__wrapper {
@@ -80,7 +90,7 @@
     .address__element-link {
         max-width: 200px;
         width: 100%;
-    }
+    }    
 }
 
 @media (max-width: 450px) {
