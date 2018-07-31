@@ -1,0 +1,24 @@
+@import "sass/variables";
+
+/* SECTION WRAPPER IS A CONTAINER FOR SECTION CALENDAR AND DIAGRAMS OR ADDRESS SECTION.*/
+.wrapper {
+    width: 97%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 1.5%;
+    padding-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: $wrapper-background-color;
+}
+.wrapper__title {
+    text-transform: uppercase;
+    color: #a6a6a6;
+    font-family: $primary-font;
+    font-size: $wrapper-title-font-size;
+    font-weight: 500;
+    line-height: $primary-line-height;linkext-transform: uppercase;
+    border-bottom: 1px solid #e3e3e3;
+    padding-left: 17px;
+    margin-bottom: 0;
+    margin-top: 0;
+}

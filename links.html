@@ -23,40 +23,69 @@
                     <ul class="menu__list">
                         <li class="menu__element--active">
                             <a href="index.html" class="menu__link--active">
-                                <img class="menu__icon--active" src="images/icon-general-menu.svg" alt="icon">General
+                                <span class="icon-general menu__icon--active"></span>General
                             </a>
                         </li>
                         <li class="menu__element">
                             <a href="#" class="menu__link">
-                                <img class="menu__icon" src="images/icon-details-menu.svg" alt="icon">Details
+                                <span class="icon-details menu__icon"></span>Details
                             </a>
                         </li>
                         <li class="menu__element">
                             <a href="links.html" class="menu__link">
-                                <img class="menu__icon" src="images/icon-links-menu.svg" alt="icon">Links
+                                <span class="menu__icon icon-links"></span>Links
                             </a>
                         </li>
                         <li class="menu__element">
                             <a href="#" class="menu__link">
-                                <img class="menu__icon" src="images/icon-banners-menu.svg" alt="icon">Banners
+                                <span class="menu__icon icon-banners"></span>Banners
                             </a>
                         </li>
                         <li class="menu__element">
                             <a href="#" class="menu__link">
-                                <img class="menu__icon" src="images/icon-personal-data-menu.svg" alt="icon">Personal data
+                                <span class="menu__icon icon-personaldata"></span>Personal data
                             </a>
                         </li>
                         <li class="menu__element">
                             <a href="#" class="menu__link">
-                                <img class="menu__icon" src="images/icon-payout-menu.png" alt="icon">Payout
+                                <span class="menu__icon icon-payout"></span>Payout
                             </a>
                         </li>
                         <li class="menu__element">
                             <a href="#" class="menu__link">
-                                <img class="menu__icon" src="images/icon-postback-menu.svg" alt="icon">Postback
+                                <span class="menu__icon icon-postback"></span>Postback
                             </a>
                         </li>
                     </ul>
+                    <!--SECTION TOPBAR-->
+                    <header class="topbar--hidden">
+                        <ul class="topbar__list">
+                            <li class="topbar__element">
+                                <span class="topbar__icon icon-wallet"></span>$1,500.00
+                                <a href="" class="topbar__link">
+                                    <span class="topbar__icon icon-arrow-down"></span>
+                                </a>
+                            </li>
+                            <li class="topbar__element">
+                                <a href="#" class="topbar__link">
+                                    <span class="topbar__icon icon-notification">
+                                        <img class="topbar__icon-notification-dot" src="images/icon-notification-dot.png" alt="dot">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="topbar__element">
+                                <span class="topbar__icon icon-profile"></span>
+                                <a href="#" class="topbar__link">
+                                    <span class="topbar__text">Leonardo Dicaprio</span>
+                                </a>
+                            </li>
+                            <li class="topbar__element">
+                                <a href="#" class="topbar__link">
+                                    <span class="topbar__icon icon-quit"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </header>
                 </nav>
                 <h1 class="sidebar__title">your manager</h1>
                 <div class="sidebar__person">
@@ -71,25 +100,27 @@
         <header class="topbar">
             <ul class="topbar__list">
                 <li class="topbar__element">
-                    <img class="topbar__icon" src="images/icon-topbar-wallet.svg" alt="wallet">$1,500.00
+                    <span class="topbar__icon icon-wallet"></span>$1,500.00
                     <a href="" class="topbar__link">
-                        <img class="topbar__icon" src="images/icon-topbar-arrow-down.png" alt="arrow-down">
+                        <span class="topbar__icon icon-arrow-down"></span>
                     </a>
                 </li>
                 <li class="topbar__element">
                     <a href="#" class="topbar__link">
-                        <img class="topbar__icon" src="images/icon-topbar-bell.svg" alt="bell">
+                        <span class="topbar__icon icon-notification">
+                            <img class="topbar__icon-notification-dot" src="images/icon-notification-dot.png" alt="dot">
+                        </span>
                     </a>
                 </li>
                 <li class="topbar__element">
-                    <img class="topbar__icon" src="images/icon-topbar-profile.png" alt="">
+                    <span class="topbar__icon icon-profile"></span>
                     <a href="#" class="topbar__link">
                         <span class="topbar__text">Leonardo Dicaprio</span>
                     </a>
                 </li>
                 <li class="topbar__element">
                     <a href="#" class="topbar__link">
-                        <img class="topbar__icon" src="images/icon-topbar-exit.svg" alt="">
+                        <span class="topbar__icon icon-quit"></span>
                     </a>
                 </li>
             </ul>
@@ -99,173 +130,177 @@
             <div class="container-fluid">
                 <div class="row">
                         <!--SECOND WRAPPER-->
-                    <div class="wrapper col-sm-12 col-md-12 col-lg-12"> 
-                        <h1 class="wrapper__title">links</h1>
-                        <div class="addres">
-                            <button class="addres__button">+add new</button>
-                            <ul class="addres__list">
-                                <li class="addres__element">Home page</li>
-                                <li class="addres__element-link" >
-                                    <a href="#" class="addres__link">http://www.homepage.com</a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-link.svg" alt="link">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-delete.svg" alt="delete">
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="addres__list">
-                                <li class="addres__element">Curently offer</li>
-                                <li class="addres__element-link">
-                                    <a href="#" class="addres__link">http://www.currently.com</a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#" >
-                                        <img class="addres__icon" src="images/icon-link-link.svg" alt="link">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#" >
-                                        <img class="addres__icon" src="images/icon-link-delete.svg" alt="delete">
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="addres__list">
-                                <li class="addres__element">Blurpix</li>
-                                <li class="addres__element-link" >
-                                    <a href="#" class="addres__link">http://www.blurpix.com</a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-link.svg" alt="link">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-delete.svg" alt="delete">
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="addres__list">
-                                <li class="addres__element">Your site</li>
-                                <li class="addres__element-link" >
-                                    <a href="#" class="addres__link">http://www.yoursite.com</a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">                                    
-                                        <img class="addres__icon" src="images/icon-link-link.svg" alt="link">
-                                    </a>
-                                    </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">                                    
-                                        <img class="addres__icon" src="images/icon-link-delete.svg" alt="delete">
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="addres__list">
-                                <li class="addres__element">Google</li>
-                                <li class="addres__element-link" >
-                                    <a href="#" class="addres__link">http://www.google.com</a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-link.svg" alt="link">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-delete.svg" alt="delete">
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="addres__list">
-                                <li class="addres__element">Facebook</li>
-                                <li class="addres__element-link" >
-                                    <a href="#" class="addres__link">http://www.facebook.com</a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-link.svg" alt="link">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-delete.svg" alt="delete">
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="addres__list">
-                                <li class="addres__element">Dashboard</li>
-                                <li class="addres__element-link" >
-                                    <a href="#" class="addres__link">http://www.dashboard.com</a
-                                        ></li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-link.svg" alt="link">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-delete.svg" alt="delete">
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="addres__list">
-                                <li class="addres__element">Blurax</li>
-                                <li class="addres__element-link">
-                                    <a href="#" class="addres__link">http://www.blurax.com</a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-link.svg" alt="link">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-delete.svg" alt="delete">
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="addres__list">
-                                <li class="addres__element">Piece of Wine</li>
-                                <li class="addres__element-link">
-                                    <a href="#" class="addres__link">http://www.pieceofwine.com</a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-link.svg" alt="link">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-delete.svg" alt="delete">
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="addres__list">
-                                <li class="addres__element">Twitter</li>
-                                <li class="addres__element-link">
-                                    <a href="#" class="addres__link">http://www.twitter.com</a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-link.svg" alt="link">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="addres__link-icon" href="#">
-                                        <img class="addres__icon" src="images/icon-link-delete.svg" alt="delete">
-                                    </a>
-                                </li>
-                            </ul>
-                            <button class="addres__button">+add new</button>
-                        </div>                    
-                    </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="wrapper col-sm-12 col-md-12 col-lg-12">
+                                    <h1 class="wrapper__title">links</h1>
+                                    <div class="address">
+                                        <button class="btn address__button">+add new</button>
+                                        <ul class="address__list">
+                                            <li class="address__element">Home page</li>
+                                            <li class="address__element-link">
+                                                <a href="#" class="address__link">http://www.homepage.com</a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon icon-links"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon-trash icon-trash"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="address__list">
+                                            <li class="address__element">Curently offer</li>
+                                            <li class="address__element-link">
+                                                <a href="#" class="address__link">http://www.currently.com</a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon icon-links"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon-trash icon-trash"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="address__list">
+                                            <li class="address__element">Blurpix</li>
+                                            <li class="address__element-link">
+                                                <a href="#" class="address__link">http://www.blurpix.com</a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon icon-links"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon-trash icon-trash"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="address__list">
+                                            <li class="address__element">Your site</li>
+                                            <li class="address__element-link">
+                                                <a href="#" class="address__link">http://www.yoursite.com</a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon icon-links"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon-trash icon-trash"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="address__list">
+                                            <li class="address__element">Google</li>
+                                            <li class="address__element-link">
+                                                <a href="#" class="address__link">http://www.google.com</a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon icon-links"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon-trash icon-trash"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="address__list">
+                                            <li class="address__element">Facebook</li>
+                                            <li class="address__element-link">
+                                                <a href="#" class="address__link">http://www.facebook.com</a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon icon-links"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon-trash icon-trash"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="address__list">
+                                            <li class="address__element">Dashboard</li>
+                                            <li class="address__element-link">
+                                                <a href="#" class="address__link">http://www.dashboard.com</a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon icon-links"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon-trash icon-trash"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="address__list">
+                                            <li class="address__element">Blurax</li>
+                                            <li class="address__element-link">
+                                                <a href="#" class="address__link">http://www.blurax.com</a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon icon-links"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon-trash icon-trash"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="address__list">
+                                            <li class="address__element">Piece of Wine</li>
+                                            <li class="address__element-link">
+                                                <a href="#" class="address__link">http://www.pieceofwine.com</a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon icon-links"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon-trash icon-trash"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="address__list">
+                                            <li class="address__element">Twitter</li>
+                                            <li class="address__element-link">
+                                                <a href="#" class="address__link">http://www.twitter.com</a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon icon-links"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="address__link-icon" href="#">
+                                                    <span class="address__icon-trash icon-trash"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <button class="btn address__button">+add new</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
                 

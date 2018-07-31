@@ -1,0 +1,51 @@
+@import "sass/variables";
+@import "sass/mixins";
+
+/* SECTION SIDEBAR  */
+.sidebar {
+    width: 188px;    
+    height: 100%;
+    background-color: $sidebar-background-color;
+    float: left;
+    position: fixed;
+    
+}
+.sidebar__title { 
+    @include color-display($sidebar-menu-title-link-color, inline-block);
+    font-family: $primary-font;       
+    font-size: $sidebar-title-font-size;
+    font-weight: 500;
+    line-height: $primary-line-height;
+    text-transform: uppercase;
+    letter-spacing: -0.28px;
+    margin-top: 28px; 
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+.sidebar__person {
+    position: relative;
+    height: 43px;
+    margin: 0;
+    padding: 0;
+}
+.sidebar__image {
+    margin-left: 20px;    
+}
+.sidebar__image-online {
+    position: absolute;
+    left: 50px;   
+}
+.sidebar__name {   
+    color: #56819f;
+    font-family: $primary-font;
+    font-size: $sidebar-name-font-size;
+    font-weight: 300;
+    line-height: $primary-line-height;
+    float: right;    
+    margin-right: 47px;
+    padding: 0;
+    text-decoration: none;
+    &:hover {
+        color: #cc8743;
+    }
+}

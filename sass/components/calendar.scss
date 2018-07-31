@@ -1,0 +1,57 @@
+@import "sass/variables";
+@import "sass/mixins";
+
+/* SECTION CALENDAR */
+.calendar {
+    border-bottom: 1px solid #e3e3e3;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.calendar__wrapper {
+    display: flex;
+    max-width: 422px;
+    width: 100%;
+    margin: 0 auto;
+}
+.calendar__data {
+    border-radius: 3px;
+    border: 1px solid #e3e3e3;
+    margin-right: 13px;
+    &:hover {
+        border: 1px solid #b1b1b1;
+    }
+}
+.calendar__item {
+    display: inline; 
+    padding-top: 7px;
+    padding-bottom: 7px;       
+}
+.calendar__item:nth-child(2) {
+    border-left: 1px solid #e3e3e3;
+}
+.calendar__day {
+    color: #333333;
+    font-family: $primary-font;
+    font-size: $calendar-day-font-size;
+    font-weight: 300;
+    line-height: $primary-line-height;
+    @include padding(17px, 64px, 17px, 17px);
+}
+.calendar__icon {
+    margin-right: 15px;
+    color: #9c9c9c;
+    &:hover {
+        color: #333333;
+    }
+}
+.calendar__button {
+    padding: 0;
+    &:hover {
+        background-color: #ffa200;
+        cursor: pointer
+    }
+}
+.calendar__button-icon {
+    padding-left: 13px;
+    padding-right: 13px;  
+}

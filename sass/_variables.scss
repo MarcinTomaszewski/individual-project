@@ -15,10 +15,10 @@ $calendar-day-font-size: $primary-font-size - 2px;
 $diagrams-text-font-size: $primary-font-size;
 $diagrams-number-font-size: $primary-font-size;
 $diagrams-title-font-size: $primary-font-size;
-$addres-button-font-size: $primary-font-size + 2px;
-$addres-element-font-size: $primary-font-size;
-$addres-element-adress-font-size: $primary-font-size;
-$addres-link-font-size: $primary-font-size;
+$address-button-font-size: $primary-font-size + 2px;
+$address-element-font-size: $primary-font-size;
+$address-element-adress-font-size: $primary-font-size;
+$address-link-font-size: $primary-font-size;
 
 /* Fonts */
 $primary-font: 'Roboto', Arial,  sans-serif;
@@ -34,5 +34,6 @@ $topbar-element-background-hover-color: #f5f5f2;
 /* Line height */
 $primary-line-height: 42px;
 $topbar-element-line-height: $primary-line-height + 18px;
-$addres-element-media-line-height: $primary-line-height - 12px;
-$addres-element-link-media-line-height: $primary-line-height - 12px;
+$address-element-media-line-height: $primary-line-height - 12px;
+$address-element-link-media-line-height: $primary-line-height - 12px;
+$address-icon-line-height: $primary-line-height;

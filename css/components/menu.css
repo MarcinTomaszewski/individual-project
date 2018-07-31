@@ -1,0 +1,23 @@
+/* Colors */
+/* Font size */
+/* Fonts */
+/* Background color */
+/* Line height */
+/* PAGE NAVIGATION - MENU */
+.menu__list { list-style-type: none; margin: 0; padding: 0; border-bottom: 1px solid #333333; padding-bottom: 41px; }
+
+.menu__element--active { border-left: 4px solid #f58220; background-color: #282828; }
+
+.menu__link--active { text-decoration: none; color: #ffffff; font-family: "Roboto", Arial, sans-serif; font-size: 14px; font-weight: 300; line-height: 42px; }
+
+.menu__icon--active { width: 0.8em; margin-left: 16px; margin-right: 13px; line-height: 42px; }
+
+.menu__element:hover { border-left: 4px solid #f58220; background-color: #282828; }
+
+.menu__element:hover .menu__link { color: #ffffff; }
+
+.menu__element:hover .menu__icon { margin-left: 16px; width: 0.8em; }
+
+.menu__link { text-decoration: none; color: #818181; font-family: "Roboto", Arial, sans-serif; font-size: 14px; font-weight: 300; line-height: 42px; }
+
+.menu__icon { width: 0.8em; margin-left: 20px; margin-right: 13px; line-height: 42px; }

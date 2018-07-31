@@ -1,0 +1,11 @@
+@import "sass/variables";
+@import "sass/mixins";
+
+/* THIS IS A CONTAINER WITH WRAPPERS IN WHICH THERE ARE SECTION CALENDAR, DIAGRAMS AND ADDRES */
+.main-container {
+    max-width: 1092px;
+    height: auto;
+    background-color: $main-container-background-color;
+    margin-left: 188px;
+    @include padding(60px, 1.5%, 1.5%, 1.5%);
+}

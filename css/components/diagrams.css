@@ -1,0 +1,19 @@
+/* Colors */
+/* Font size */
+/* Fonts */
+/* Background color */
+/* Line height */
+/* SECTION DIAGRAMS */
+.diagrams { max-width: 687px; margin: 0 auto; }
+
+.diagrams__wrapper { display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 41px; }
+
+.diagrams__element { display: flex; align-items: center; justify-content: space-between; width: 310px; border-bottom: 1px solid #e3e3e3; margin-top: 12px; }
+
+.diagrams__text { color: #a6a6a6; font-family: "Roboto", Arial, sans-serif; font-size: 16px; font-weight: 700; line-height: 42px; }
+
+.diagrams__number { color: #333333; font-family: "Roboto", Arial, sans-serif; font-size: 16px; font-weight: 300; line-height: 42px; }
+
+.diagrams__title { color: #a6a6a6; font-family: "Roboto", Arial, sans-serif; font-size: 16px; font-weight: 700; line-height: 42px; margin-top: 76px; }
+
+.diagrams__graph { max-width: 655px; width: 100%; margin: 0 auto; padding-top: 40px; padding-right: 1.5%; padding-bottom: 55px; padding-left: 1.5%; }

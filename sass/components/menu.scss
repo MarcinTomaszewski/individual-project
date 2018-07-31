@@ -1,0 +1,51 @@
+@import "sass/variables";
+@import "sass/mixins";
+/* PAGE NAVIGATION - MENU */
+.menu__list {
+    @include list-style-reset();
+    border-bottom: 1px solid #333333;
+    padding-bottom: 41px;
+}
+.menu__element--active {
+    border-left: 4px solid #f58220;
+    background-color: $menu-element-background-hover-active-color;
+}
+.menu__link--active {
+    text-decoration: none;
+    color: $menu-element-link-hover-active-color;
+    font-family: $primary-font;
+    font-size: $menu-link-font-size;
+    font-weight: 300;
+    line-height: $primary-line-height;
+}
+.menu__icon--active {
+    width: 0.8em;
+    margin-left: 16px;
+    margin-right: 13px;
+    line-height: $primary-line-height;
+}
+.menu__element:hover {
+    border-left: 4px solid #f58220;
+    background-color: $menu-element-background-hover-active-color;
+}
+.menu__element:hover .menu__link {
+    color: $menu-element-link-hover-active-color;
+}
+.menu__element:hover .menu__icon {
+    margin-left: 16px;
+    width: 0.8em;
+}
+.menu__link {
+    text-decoration: none;
+    color: $sidebar-menu-title-link-color;
+    font-family: $primary-font;
+    font-size: $menu-link-font-size;
+    font-weight: 300;
+    line-height: $primary-line-height;
+}
+.menu__icon {
+    width: 0.8em;
+    margin-left: 20px;
+    margin-right: 13px;
+    line-height: $primary-line-height;
+}

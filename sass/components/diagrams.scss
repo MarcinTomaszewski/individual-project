@@ -1,0 +1,51 @@
+@import "sass/variables";
+@import "sass/mixins";
+
+/* SECTION DIAGRAMS */
+.diagrams {
+    max-width: 687px;
+    margin: 0 auto;
+}
+.diagrams__wrapper {    
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 41px;
+}
+.diagrams__element {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 310px;
+    border-bottom: 1px solid #e3e3e3;
+    margin-top: 12px;
+}
+.diagrams__text {
+    color: #a6a6a6;
+    font-family: $primary-font;
+    font-size: $diagrams-text-font-size;
+    font-weight: 700;
+    line-height: $primary-line-height;
+}
+.diagrams__number {
+    color: #333333;
+    font-family: $primary-font;
+    font-size: $diagrams-number-font-size;
+    font-weight: 300;
+    line-height: $primary-line-height;
+}
+.diagrams__title {
+    color: #a6a6a6;
+    font-family: $primary-font;
+    font-size: $diagrams-title-font-size;
+    font-weight: 700;
+    line-height: $primary-line-height; 
+    margin-top: 76px;   
+}
+.diagrams__graph { 
+    max-width: 655px;
+    width: 100%;  
+    margin: 0 auto;
+    @include padding(40px, 1.5%, 55px, 1.5%);
+}
+

@@ -1,0 +1,57 @@
+@import "sass/variables";
+
+/* SECTION TOPBAR */
+.topbar {
+    min-width: 1092px; 
+    height: 60px;
+    background-color: $topbar-background-color;
+    border-bottom: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    position: fixed;
+    top: 0;  
+    margin-left: 188px;   
+    overflow: hidden;    
+}
+.topbar__list {
+    list-style-type: none;
+    float: right;
+    margin: 0;   
+}
+.topbar__element {
+    float: left;    
+    border-left: 1px solid #e3e3e3;
+    font-family: $primary-font;
+    font-weight: 500;
+    color: $topbar-element-color;
+    &:hover {
+        background-color: $topbar-element-background-hover-color;
+        cursor: pointer;
+    }
+}
+.topbar__icon {
+    position: relative;
+    margin: 0 18px;
+    line-height: $topbar-element-line-height;
+    color: #9c9c9c;
+}
+.topbar__link {
+    text-decoration: none;
+}
+.topbar__icon-notification-dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.topbar__text {
+    margin-right: 18px;
+    color: #56819f;
+    font-family: $primary-font;
+    font-size: $topbar-text-font-size;
+    font-weight: 300;
+     &:hover {
+        color: #cc8743;
+    }
+}
+.topbar--hidden {
+    display: none;
+}

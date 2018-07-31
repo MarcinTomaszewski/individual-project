@@ -1,0 +1,10 @@
+@import "sass/variables";
+@import "sass/mixins";
+
+/* COMMON BUTTON PROPERITIES */
+.btn {
+    border: none;
+    border-radius: 3px;
+    background-color: #f58220;
+    @include color-display(#ffffff, block);
+}

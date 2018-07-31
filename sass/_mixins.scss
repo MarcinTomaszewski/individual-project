@@ -1,0 +1,15 @@
+@mixin list-style-reset() {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+@mixin padding($padding-top, $padding-right, $padding-bottom, $padding-left) {
+    padding-top: $padding-top;
+    padding-right: $padding-right;
+    padding-bottom: $padding-bottom;
+    padding-left: $padding-left;
+}
+@mixin color-display($color, $display) {
+    color: $color;
+    display: $display;
+}

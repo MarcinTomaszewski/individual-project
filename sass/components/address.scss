@@ -1,0 +1,78 @@
+@import "sass/variables";
+@import "sass/mixins";
+
+/* SECTION ADDRESS - LINK */
+.address {
+    max-width: 687px;
+    margin: 0 auto;
+}
+.address__button {
+    margin: 23px auto;
+    font-family: $primary-font;
+    font-size: $address-button-font-size;
+    font-weight: 300;
+    @include padding(12px, 25px, 12px, 21px);
+    &:hover {
+        background-color: #ffa200;
+        cursor: pointer
+    }
+}
+.address__list {
+    @include list-style-reset();
+    display: flex;
+    border-top: 1px solid #e3e3e3;    
+    &:hover {
+        background-color: rgba(177, 191, 191, 0.1);
+    }
+    &:hover .address__icon, &:hover .address__icon-trash {
+        display: initial;
+    }
+}
+.address__element {
+    max-width: 315px;
+    width: 100%;
+    color: #a6a6a6;
+    font-family: $primary-font;
+    font-size: $address-element-font-size;
+    font-weight: 700;
+    line-height: $primary-line-height;   
+    padding-left: 10px;
+}
+.address__element-link {
+    @include color-display(#56819f, block);
+    width: 290px;    
+    font-family: $primary-font;
+    font-size: $address-element-adress-font-size;
+    font-weight: 300;
+    line-height: 42px;
+}
+.address__link {
+    text-decoration: none;
+    color: #56819f;
+    font-family: $primary-font;
+    font-size: $address-link-font-size;
+    font-weight: 300;
+    &:hover {
+        color: #cc8743; 
+    }
+}
+.address__list:nth-child(11) {
+    border-bottom: 1px solid #e3e3e3;
+}
+.address__link-icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 42px;
+    width: 40px;
+    
+}
+.address__icon {
+    line-height: $address-icon-line-height;
+    @include color-display(#f58220, none);
+}
+.address__icon-trash {
+    line-height: $address-icon-line-height;
+    @include color-display(#9c9c9c, none);    
+}
+
